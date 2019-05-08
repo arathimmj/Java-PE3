@@ -6,9 +6,9 @@ public class ChessBoard {
 
         String[][] chessBoard = new String[8][8];
 
-        for (int i = 0; i < 8; i++){
+        for (int i = 0; i < 8; i++){        //for rows
 
-            for (int j = 0; j < 8; j++){
+            for (int j = 0; j < 8; j++){        //for columns
 
                 if ((i+j) % 2 == 0){
                     System.out.print("WW|");
@@ -18,7 +18,7 @@ public class ChessBoard {
                 }
             }
 
-            System.out.println();
+            System.out.println();       //print on next row
         }
     }
 }

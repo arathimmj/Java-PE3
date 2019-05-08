@@ -7,6 +7,7 @@ public class NullOutOfBoundNegativeArraySize {
         String str = "Hello There";
         String nullString = null;
 
+//        throw null pointer exceptions
         try{
             int length = nullString.length();
         }
@@ -16,6 +17,7 @@ public class NullOutOfBoundNegativeArraySize {
 
         String[] strArray = str.split(" ", 0);
 
+//        throw index out of bounds exception
         try {
             char ch = str.charAt(-1);
         }
@@ -25,6 +27,7 @@ public class NullOutOfBoundNegativeArraySize {
 
         int size = -5;
 
+//        throw negative array size exception
         try{
             String[] newStrArray = new String[size];
         }

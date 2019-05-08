@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 
 public class RemoveVowels {
 
+//    removes the vowels
     public String[] removeVowels(String[] countryArray){
 
         String[] finalArray = countryArray;
@@ -28,16 +29,18 @@ public class RemoveVowels {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Enter the num");
-        int numOfCountries = Integer.parseInt(br.readLine());
+        int numOfCountries = Integer.parseInt(br.readLine());       //take input
 
         String[] countryArray = new String[numOfCountries];
         String[] finalArray = new String[numOfCountries];
 
+//        remove vowels
         for (int i = 0; i<numOfCountries; i++)
             countryArray[i] = br.readLine();
 
         finalArray = removeVowels.removeVowels(countryArray);
 
+//        print array
         for (String country : finalArray)
             System.out.println(country);
     }

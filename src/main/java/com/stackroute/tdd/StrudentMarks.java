@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 
 public class StrudentMarks {
 
+//    check if student marks are valid
     public boolean checkStudentMark(int numOfStudents, int[] stuGrades){
 
         for (int grade : stuGrades){

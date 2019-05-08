@@ -12,16 +12,19 @@ public class TryExcep {
 
         String str = "Hellothere";
 
+//        throw an exception
         try {
 
             TryExcep tryExcep = new TryExcep(str);
 
         }
+//        catch the exception
         catch (Exception e){
 
             System.out.println(str);
 
         }
+//        go to finally
         finally {
             System.out.println("I have been here");
         }
